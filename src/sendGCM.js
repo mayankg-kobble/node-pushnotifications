@@ -143,6 +143,7 @@ const sendGCM = (regIds, data, settings) => {
     data: opts.phonegap === true ? Object.assign(custom, notification) : custom, // See https://github.com/phonegap/phonegap-plugin-push/blob/master/docs/PAYLOAD.md#android-behaviour
     notification:
       opts.phonegap === true || data.silent === true ? undefined : notification,
+    fcm_options: data.fcm_options || { analytics_label: data.title}
   });
   let chunk = 0;
 
