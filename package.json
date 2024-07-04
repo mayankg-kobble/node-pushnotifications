@@ -16,7 +16,7 @@
     "ci": "npm run build && npm run test-cover && npm run lint",
     "prepublishOnly": "npm run lint && npm test && npm run build",
     "release": "release-it",
-    "prepare": "husky install"
+ 
   },
   "keywords": [
     "notifications",
